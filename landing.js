@@ -48,3 +48,4 @@ const LandingPage = () => {
       description: "Crea presentazioni che catturano l'attenzione"
     }
   ];
+}

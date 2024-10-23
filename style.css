@@ -1,0 +1,135 @@
+/* File CSS per il progetto Landing Page */
+
+/* Colori principali */
+:root {
+    --light-blue: #e0f7fa; /* Azzurro tenue */
+    --blue: #007bb5; /* Blu intenso */
+    --white: #ffffff; /* Bianco */
+    --gray: #666666; /* Grigio per testi secondari */
+    --light-gray: #f2f2f2; /* Grigio chiaro per background */
+    --green: #28a745; /* Verde per icone positive */
+  }
+  
+  /* Corpo della pagina */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--light-blue); /* Azzurro tenue */
+    margin: 0;
+    padding: 0;
+    color: var(--gray);
+  }
+  
+  h1, h2, h3 {
+    color: var(--blue); /* Blu per titoli */
+  }
+  
+  h1 span {
+    color: var(--blue); /* Blu per enfatizzare */
+  }
+  
+  p {
+    color: var(--gray); /* Testi in grigio */
+  }
+  
+  /* Pulsanti */
+  button {
+    background-color: var(--blue); /* Blu per i pulsanti */
+    color: var(--white); /* Testo bianco sui pulsanti */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #005f8d; /* Blu più scuro al passaggio del mouse */
+  }
+  
+  button.ghost {
+    background-color: transparent;
+    color: var(--blue); /* Blu per il testo */
+    border: 2px solid var(--blue);
+  }
+  
+  button.ghost:hover {
+    background-color: var(--blue);
+    color: var(--white); /* Bianco quando è attivo */
+  }
+  
+  /* Card */
+  .card {
+    background-color: var(--white); /* Sfondo bianco per le card */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Sezioni */
+  header {
+    background-color: var(--white); /* Sfondo bianco per l'header */
+    border-bottom: 2px solid var(--light-gray);
+  }
+  
+  footer {
+    background-color: var(--light-gray); /* Grigio chiaro per il footer */
+    color: var(--gray); /* Testo grigio nel footer */
+  }
+  
+  /* Form */
+  input {
+    background-color: var(--light-gray); /* Grigio chiaro per i campi input */
+    border: 1px solid var(--gray);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 4px;
+  }
+  
+  input:focus {
+    border-color: var(--blue); /* Bordo blu al focus */
+  }
+  
+  /* Icone */
+  .icon {
+    color: var(--blue); /* Blu per le icone principali */
+  }
+  
+  .icon-success {
+    color: var(--green); /* Verde per le icone di successo */
+  }
+  
+  /* Sezione testimonial */
+  .testimonial {
+    background-color: var(--white); /* Bianco per i blocchi testimonial */
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Griglie e layout */
+  .grid {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Sezione principale */
+  .main {
+    background: linear-gradient(to bottom, var(--light-blue), var(--white)); /* Gradiente dall'azzurro al bianco */
+  }
+  
+  .text-center {
+    text-align: center;
+  }
